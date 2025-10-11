@@ -1,80 +1,78 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   checkers.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: lperalta <lperalta@student.42.fr>          #+#  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025-08-26 17:10:06 by lperalta          #+#    #+#             */
-/*   Updated: 2025-08-26 17:10:06 by lperalta         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 #include "push_swap_bonus.h"
 
-static int	ft_sign(char c)
+static int	ft_execute_instruction(char *instr, t_stack *a, t_stack *b)
 {
-	if (c == '+' || c == '-')
+	if (!ft_strncmp(instr, "sa\n", 3))
+		ft_swap_bonus(a->stack);
+	else if (!ft_strncmp(instr, "sb\n", 3))
+		ft_swap_bonus(b->stack);
+	else if (!ft_strncmp(instr, "ss\n", 3))
+		ft_ss_bonus(a->stack, b->stack);
+	else if (!ft_strncmp(instr, "pa\n", 3))
+		ft_pa_bonus(a, b);
+	else if (!ft_strncmp(instr, "pb\n", 3))
+		ft_pb_bonus(a, b);
+	else if (!ft_strncmp(instr, "ra\n", 3))
+		ft_rotate_bonus(a->stack);
+	else if (!ft_strncmp(instr, "rb\n", 3))
+		ft_rotate_bonus(b->stack);
+	else if (!ft_strncmp(instr, "rr\n", 3))
+		ft_rr_bonus(a->stack, b->stack);
+	else if (!ft_strncmp(instr, "rra\n", 4))
+		ft_reverse_rotate_bonus(a->stack);
+	else if (!ft_strncmp(instr, "rrb\n", 4))
+		ft_reverse_rotate_bonus(b->stack);
+	else if (!ft_strncmp(instr, "rrr\n", 4))
+		ft_rrr_bonus(a->stack, b->stack);
+	else
+		return (0);
+	return(1);
+}
+
+static int	ft_checker(t_stack *a, t_stack *b)
+{
+	char	*line;
+
+	while ((line = get_next_line(0))) // usaremos tu propia gnl
+	{
+		if (!ft_execute_instruction(line, a, b))
+		{
+			free(line);
+			return(0);
+		}
+		free(line);
+	}
+	if (ft_is_sorted_bonus(a) && !*(b->stack))
+		write(1, "OK\n", 3);
+	else
+		write(1, "KO\n", 3);
+	return(1);
+}
+
+int	main(int argc, char **argv)
+{
+	t_stack	*stack_a;
+	t_stack	*stack_b;
+
+	if (argc < 2)
+		return (0);
+	stack_a = malloc(sizeof(t_stack));
+	stack_b = malloc(sizeof(t_stack));
+	if (!stack_a || !stack_b)
 		return (1);
+	stack_a->stack = malloc(sizeof(t_node *));
+	stack_b->stack = malloc(sizeof(t_node *));
+	if (!stack_a->stack || !stack_b->stack)
+		ft_error_bonus(NULL, stack_a);
+	*(stack_a->stack) = NULL;
+	*(stack_b->stack) = NULL;
+	stack_a->size = 0;
+	stack_b->size = 0;
+	ft_get_arguments_bonus(argc, argv, stack_a);
+	ft_check_dups_bonus(stack_a);
+	if (!ft_checker(stack_a, stack_b))
+		write(2, "Error\n", 6);
+	ft_free_stack_bonus(stack_a);
+	ft_free_stack_bonus(stack_b);
 	return (0);
-}
-
-void	ft_checkervalids(char **args)
-{
-	int		i;
-	int		j;
-
-	i = 1;
-	while (args[i])
-	{
-		if (ft_strlen(args[i]) < 1)
-			ft_error(NULL, NULL, NULL);
-		j = 0;
-		while (args[i][j])
-		{
-			if (!ft_isdigit(args[i][j]) && !ft_sign(args[i][j])
-					&& !ft_isspace(args[i][j]))
-				ft_error(NULL, NULL, NULL);
-			j++;
-		}
-		i++;
-	}
-}
-
-int	ft_valid_digit(char *str)
-{
-	int	i;
-
-	i = 0;
-	if (!str || !*str)
-		return (0);
-	if (ft_sign(str[i]))
-		i++;
-	if (!ft_isdigit(str[i]))
-		return (0);
-	while (str[i])
-	{
-		if (!ft_isdigit(str[i]))
-			return (0);
-		i++;
-	}
-	return (1);
-}
-
-void	ft_check_dups(t_stack *stack)
-{
-	t_node	*now;
-	t_node	*dup;
-
-	now = stack->stack;
-	while (now)
-	{
-		dup = now->next;
-		while (dup)
-		{
-			if (dup->value == now->value)
-				ft_error(NULL, stack, NULL);
-			dup = dup->next;
-		}
-		now = now->next;
-	}
 }
