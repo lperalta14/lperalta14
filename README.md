@@ -25,8 +25,11 @@ Este repositorio reúne mi progreso y proyectos del **cursus de 42**. Aquí plas
 
 ##📬 Contacto
 📍 42 Málaga
+
 💼 [LinkedIn](https://www.linkedin.com/feed/)
+
 💻 [GitHub](https://github.com/lperalta14/lperalta14)
+
 📧 [mail](luisperaltamunoz@gmail.com)
 
 Si tienes dudas, comentarios o quieres colaborar en algún proyecto, estaré encantado de conectar.
