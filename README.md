@@ -31,7 +31,7 @@ Este repositorio reúne mi progreso y proyectos del **cursus de 42**. Aquí plas
 
 💻 [GitHub](https://github.com/lperalta14/lperalta14)
 
-📧 [mail](luisperaltamunoz@gmail.com)
+📧 [luisperaltamunoz@gmail.com](luisperaltamunoz@gmail.com)
 
 Si tienes dudas, comentarios o quieres colaborar en algún proyecto, estaré encantado de conectar.
 
