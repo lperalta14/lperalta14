@@ -24,6 +24,7 @@ Este repositorio reúne mi progreso y proyectos del **cursus de 42**. Aquí plas
 ---
 
 ##📬 Contacto
+
 📍 42 Málaga
 
 💼 [LinkedIn](https://www.linkedin.com/feed/)
