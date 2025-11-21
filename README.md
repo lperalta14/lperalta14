@@ -23,7 +23,7 @@ Este repositorio reúne mi progreso y proyectos del **cursus de 42**. Aquí plas
 
 ---
 
-##📬 Contacto
+## 📬 Contacto
 
 📍 42 Málaga
 
