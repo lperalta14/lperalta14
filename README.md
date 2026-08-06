@@ -23,9 +23,9 @@ Mi enfoque se basa en la resolución de problemas, la programación modular y el
 
 ### — Proyectos destacados
 
-├── [Minishell](https://github.com/lperalta14/minishell/) // Implementación de un shell inspirado en Bash.
-├── [Philosophers](https://github.com/lperalta14/philosophers) // Concurrencia mediante threads y mutexes.
-└── [Cub3D](https://github.com/lperalta14/cub3d) // Motor gráfico 3D basado en raycasting.
+├── [Minishell](https://github.com/lperalta14/minishell/) // Implementación de un shell inspirado en Bash.  
+├── [Philosophers](https://github.com/lperalta14/philosophers) // Concurrencia mediante threads y mutexes.  
+└── [Cub3D](https://github.com/lperalta14/cub3d) // Motor gráfico 3D basado en raycasting.  
 
 ### — Mi Librería
 
