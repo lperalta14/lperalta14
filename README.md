@@ -2,35 +2,38 @@
 
 ¡Bienvenido a mi repositorio! 👋
 
-Este repositorio reúne mi progreso y proyectos del **cursus de 42**. Aquí plasmo los desafíos que he superado, los errores que me han hecho crecer y las soluciones que he logrado afinar. Mi objetivo es que cualquier persona pueda ver de forma clara mis primeros pasos y cómo evoluciono como programador.
+Este espacio reúne mi evolución como desarrollador, desde mis primeros proyectos durante el **Cursus de 42 Málaga Fundación Telefónica** hasta proyectos orientados al desarrollo de software, sistemas y programación de bajo nivel.
+
+Mi enfoque se basa en la resolución de problemas, la programación modular y el aprendizaje continuo mediante proyectos prácticos.
 
 ---
-## ✨ Qué me define como desarrollador
+## Qué me define como desarrollador
 
-- Me encanta resolver problemas lógicos y optimizar código, intento siempre modularizar mi código.  
-- Soy persistente: no abandono hasta que el programa corre correctamente dentro de las normas del cursus.  
-- Aprendo de mis errores: cada commit cuenta una historia, cada bug es una lección.
-
----
-# — 42 Cursus
-
-└── [CURSUS](https://github.com/lperalta14/42Cursus/blob/main/README.md)  
-└── [Minishell](https://github.com/lperalta14/minishell/)  
-└── [Cub3D](https://github.com/lperalta14/cub3d)
----
-
-# — Mi Librería 📚
-└──[librería/ ](https://github.com/lperalta14/My_library#readme) //Libft mejorado y aumentado, en constante avance.
+- Me gusta resolver problemas lógicos y buscar soluciones eficientes y mantenibles.
+- Aprendo principalmente mediante la práctica y la experimentación.
+- La metodología de 42 me ha acostumbrado a trabajar de forma autónoma, investigar problemas y aprender de los errores.
+- Busco comprender cómo funcionan los sistemas a bajo nivel, no solo utilizarlos.
 
 ---
+## — 42 Cursus
 
-## 📬 Contacto
+└── 42 Cursus // Recopilación de mi recorrido y proyectos realizados durante el cursus.
 
-📍 42 Málaga
+### — Proyectos destacados:
+
+├── [Minishell](https://github.com/lperalta14/minishell/) // Implementación de un shell inspirado en Bash.  
+├── [philosophers](https://github.com/lperalta14/42Cursus/tree/main/MILESTONE_3/philo) // Concurrencia, threads y mutexes.  
+└── [Cub3D](https://github.com/lperalta14/cub3d) // Motor gráfico 3D basado en raycasting.  
+### — Mi Librería
+└──[librería/ ](https://github.com/lperalta14/My_library#readme) //Proyecto de Libreria básica en C ampliada y en constante revisión | CD.
+
+---
+
+## Contacto
+
+42 Málaga Fundación Telefónica
 
 💼 [LinkedIn](https://www.linkedin.com/feed/)
-
-💻 [GitHub](https://github.com/lperalta14/lperalta14)
 
 📧 [mail](mailto:luisperaltamunoz@gmail.com)
 
