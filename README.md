@@ -1,6 +1,6 @@
 # — Luis Peralta
 
-¡Bienvenido a mi repositorio!
+¡Bienvenidos/as a mi repositorio!
 
 Este espacio reúne mi evolución como desarrollador, desde mis primeros proyectos durante el **Cursus de 42 Málaga Fundación Telefónica** hasta proyectos orientados al desarrollo de software, sistemas y programación de bajo nivel.
 
