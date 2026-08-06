@@ -15,7 +15,7 @@ Este repositorio reúne mi progreso y proyectos del **cursus de 42**. Aquí plas
 # — 42 Cursus
 
 └── [CURSUS](https://github.com/lperalta14/42Cursus/blob/main/README.md)
-
+└── [Minishell](https://github.com/lperalta14/minishell/)
 ---
 
 # — Mi Librería 📚
